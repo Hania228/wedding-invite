@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invite - RSVP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="schedule.html">Schedule & Venue</a>
+            <a href="rsvp.html">RSVP</a>
+        </div>
+
+        <h1>RSVP & GUEST WISHES</h1>
+        <h2>Confirm Your Attendance</h2>
+        <p>Please let us know if you will be joining us at Islamabad Marque.</p>
+
+        <form id="rsvpForm" onsubmit="submitRSVP(event)">
+            <label for="guestName"><strong>Your Full Name:</strong></label><br>
+            <input type="text" id="guestName" placeholder="Enter your name" required><br>
+
+            <label for="attending"><strong>Will you attend?</strong></label><br>
+            <select id="attending">
+                <option value="Yes">Yes, I will gladly attend</option>
+                <option value="No">Sorry, I cannot make it</option>
+            </select><br>
+
+            <label for="guestsCount"><strong>Number of Guests:</strong></label><br>
+            <input type="number" id="guestsCount" min="1" max="10" value="1"><br>
+
+            <label for="wishes"><strong>Message or Wishes for the Couple:</strong></label><br>
+            <textarea id="wishes" rows="4" placeholder="Write your wishes here..."></textarea><br>
+
+            <button type="submit">Submit RSVP</button>
+        </form>
+
+        <!-- JavaScript Confirmation Message Box -->
+        <div id="confirmationBox" style="display: none; background-color: rgb(176, 232, 236); padding: 15px; border: 2px solid rgb(44, 71, 71); margin-top: 20px; border-radius: 5px;">
+            <h3 id="confirmTitle"></h3>
+            <p id="confirmDetails"></p>
+        </div>
+
+        <footer>
+            <p>Created by Hania Atif | Roll No: 26i-3116</p>
+        </footer>
+    </div>
+
+    <script>
+        function submitRSVP(event) {
+            // Prevent the page from refreshing when the form is submitted
+            event.preventDefault();
+
+            // Get values from the form inputs
+            var name = document.getElementById("guestName").value;
+            var status = document.getElementById("attending").value;
+            var count = document.getElementById("guestsCount").value;
+
+            // Display the confirmation message
+            var box = document.getElementById("confirmationBox");
+            var title = document.getElementById("confirmTitle");
+            var details = document.getElementById("confirmDetails");
+
+            box.style.display = "block";
+            title.innerHTML = "Thank You, " + name + "!";
+
+            if (status === "Yes") {
+                details.innerHTML = "Your RSVP for " + count + " guest(s) has been confirmed. We look forward to seeing you at Islamabad Marque!";
+            } else {
+                details.innerHTML = "Thank you for letting us know. We will miss you at the celebration!";
+            }
+
+            // Clear the form fields after submitting
+            document.getElementById("rsvpForm").reset();
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invite - Schedule & Venue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="schedule.html">Schedule & Venue</a>
+            <a href="rsvp.html">RSVP</a>
+        </div>
+
+        <h1>EVENT SCHEDULE & VENUE</h1>
+        <h2>Detailed Program</h2>
+        <p>Here is the complete timeline for the wedding celebration at <strong>Islamabad Marque</strong>:</p>
+
+        <table>
+            <tr>
+                <th>Activities</th>
+                <th>Time</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Guest Arrival & Welcome Drinks</td>
+                <td>6:30 PM</td>
+                <td>Reception at the main lawn</td>
+            </tr>
+            <tr>
+                <td>Start Of Ceremony</td>
+                <td>7:00 PM</td>
+                <td>Main floral arch stage</td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td>8:00 PM</td>
+                <td>Buffet service in the main hall</td>
+            </tr>
+            <tr>
+                <td>Cake Cutting & Photos</td>
+                <td>9:30 PM</td>
+                <td>Group photography with family & friends</td>
+            </tr>
+        </table>
+
+        <h2>Venue & Dress Code</h2>
+        <p><strong>Venue Address:</strong> Islamabad Marque, Main Boulevard, Islamabad.</p>
+        <p><strong>Theme & Dress Code:</strong> Pastel Aqua, Light Blue, or Soft Neutral formal attire.</p>
+
+        <!-- Simple Interactive JavaScript Feature -->
+        <button onclick="showInfo()">Show Parking & Contact Info</button>
+        <p id="extraInfo" style="display: none; background-color: rgb(235, 248, 250); padding: 10px; border: 1px solid black; margin-top: 10px;">
+            <strong>Parking:</strong> Free valet parking is available at Gate 1.<br>
+            <strong>Event Coordinator Contact:</strong> 0300-1234567
+        </p>
+
+        <footer>
+            <p>Created by Hania Atif | Roll No: 26i-3116</p>
+        </footer>
+    </div>
+
+    <script>
+        function showInfo() {
+            var info = document.getElementById("extraInfo");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* General Page Styling */
+body {
+    background-color: rgb(118, 194, 199); /* Your original pastel aqua */
+    font-family: Arial, sans-serif;
+    color: rgb(30, 50, 50);
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main Content Box for a Clean Layout */
+.container {
+    background-color: rgb(214, 240, 242); /* Soft pastel light blue */
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 2px solid rgb(44, 71, 71);
+    border-radius: 8px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgb(44, 71, 71);
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: rgb(176, 232, 236);
+    text-decoration: underline;
+}
+
+/* Headings (Kept from your Lab 11) */
+h1 {
+    color: rgb(44, 71, 71);
+    text-align: center;
+}
+
+h2 {
+    color: rgb(40, 61, 61);
+}
+
+/* Table Styling (Moved from inline HTML to CSS for consistency) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background-color: rgb(235, 248, 250);
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(156, 216, 220);
+    color: rgb(40, 61, 61);
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 15px auto;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid rgb(44, 71, 71);
+    border-radius: 5px;
+}
+
+/* Buttons */
+button {
+    background-color: rgb(44, 71, 71);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgb(65, 105, 105);
+}
+
+/* Form Elements (For RSVP Page) */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(44, 71, 71);
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 10px;
+    border-top: 1px solid rgb(44, 71, 71);
+    font-size: 14px;
+}

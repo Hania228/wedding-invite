@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invite - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="schedule.html">Schedule & Venue</a>
+            <a href="rsvp.html">RSVP</a>
+        </div>
+
+        <!-- Original Lab 11 Content -->
+        <h1>WEDDING INVITE</h1>
+        <h2>You Are Invited To Our Wedding</h2>
+        <p><strong>Location:</strong> Islamabad Marque</p>
+
+        <p>We warmly invite you and your family to celebrate our special day with us. Please check the event timings below and confirm your presence on the RSVP page.</p>
+
+        <table>
+            <tr>
+                <th>Activities</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Start Of Ceremony</td>
+                <td>7:00 PM</td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td>8:00 PM</td>
+            </tr>
+        </table>
+
+        <img src="pic.jpeg" alt="Wedding Setup" width="500" height="333">
+
+        <p>Click the button below for a quick welcome message, or visit our RSVP page to register:</p>
+        <button onclick="myFunction()">Quick RSVP Alert</button>
+        <a href="rsvp.html"><button type="button">Go to RSVP Form</button></a>
+
+        <footer>
+            <p>Created by Hania Atif | Roll No: 26i-3116</p>
+        </footer>
+    </div>
+
+    <script>
+        function myFunction() {
+            alert("Thank You! Please fill out the RSVP form on the RSVP page.");
+        }
+    </script>
+
+</body>
+</html>

@@ -117,3 +117,34 @@ footer {
     border-top: 1px solid rgb(44, 71, 71);
     font-size: 14px;
 }
+/* Special Event Highlights Cards (Added to Schedule Page) */
+.highlights-grid {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0 25px 0;
+    flex-wrap: wrap;
+}
+
+.highlight-card {
+    flex: 1;
+    min-width: 190px;
+    background-color: rgb(235, 248, 250);
+    border: 2px solid rgb(44, 71, 71);
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 2px 2px 6px rgba(44, 71, 71, 0.2);
+}
+
+.highlight-card h3 {
+    color: rgb(44, 71, 71);
+    margin-top: 0;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgb(156, 216, 220);
+    padding-bottom: 5px;
+}
+
+.highlight-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
